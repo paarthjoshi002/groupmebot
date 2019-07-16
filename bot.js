@@ -31,7 +31,7 @@ function postMessage() {
   
   options = {
     hostname: 'api.groupme.com',
-    path: '/v3/groups/42071764/messages?token=36633e408a260137b88a62dd589ed495',
+    path: '/v3/groups?token=36633e408a260137b88a62dd589ed495',
     method: 'POST'
   };
 
