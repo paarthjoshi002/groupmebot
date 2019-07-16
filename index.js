@@ -29,5 +29,6 @@ server.listen(port);
 
 function ping() {
   this.res.writeHead(200);
-  this.res.end(this.res.url);
+  var endingString = this.res.url;
+  this.res.end(endingString);
 }
