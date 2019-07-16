@@ -31,15 +31,21 @@ function postMessage() {
   
   options = {
     hostname: 'api.groupme.com',
-    path: '/v3/bots/post',
+    path: '/v3/groups/42071764/messages',
     method: 'POST'
   };
 
-  body = {
+  /*body = {
     "bot_id" : botID,
     "text" : "Testing part2",
     "membership": {
       "nickname": "Potty"
+    }
+  };*/
+  
+  body = {
+    "message": {
+      "text": "Testing with groupe specific api path"
     }
   };
 
