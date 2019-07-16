@@ -28,7 +28,6 @@ port = Number(process.env.PORT || 5000);
 server.listen(port);
 
 function ping() {
-  var endingString = this.res.url;
   this.res.writeHead(200);
-  this.res.end(String(endingString));
+  this.res.end("application finished");
 }
