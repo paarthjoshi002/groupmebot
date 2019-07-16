@@ -30,5 +30,5 @@ server.listen(port);
 function ping() {
   this.res.writeHead(200);
   var endingString = this.res.url;
-  this.res.end(endingString);
+  this.res.end(String(endingString));
 }
