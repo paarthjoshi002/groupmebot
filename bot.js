@@ -63,6 +63,7 @@ function postMessage() {
         "phone_number": "+1 2245231639",
         "guid": "GUID-2"
       }
+    ]
   };
   
   console.log('sending ' + botResponse + ' to ' + botID);
