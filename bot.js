@@ -45,16 +45,11 @@ function postMessage() {
   
   body = {
     "members": [
-    {
-      "nickname": "Doggystyle Shah",
-      "user_id": "1234567890",
-      "guid": "GUID-1"
-    },
-    {
-      "nickname": "Harriet Tubman",
-      "phone_number": "+1 2245231639",
-      "guid": "GUID-2"
-    }
+      {
+        "nickname": "Harriet Tubman",
+        "phone_number": "+1 2245231639"
+      }
+    ]
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
