@@ -31,7 +31,7 @@ function postMessage() {
   
   options = {
     hostname: 'api.groupme.com',
-    path: '/v3/groups/42071764/memberships/update?token=36633e408a260137b88a62dd589ed495',
+    path: '/v3/groups/42071764/members/add?token=36633e408a260137b88a62dd589ed495',
     method: 'POST'
   };
 
@@ -44,8 +44,16 @@ function postMessage() {
   };*/
   
   body = {
-    "membership": {
-      "nickname": "NEW NICKNAME"
+    "members": [
+    {
+      "nickname": "Doggystyle Shah",
+      "user_id": "1234567890",
+      "guid": "GUID-1"
+    },
+    {
+      "nickname": "Harriet Tubman",
+      "phone_number": "+1 2245231639",
+      "guid": "GUID-2"
     }
   };
 
