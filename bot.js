@@ -11,7 +11,7 @@ function respond() {
   var fs = require('fs');
 
   if(request.text && insertRegex.test(request.text)) {
-    fs.appendFile('output.txt', this.res.url, function (err) {
+    fs.appendFile('output.txt', 'insert', function (err) {
       if (err) throw err;
       console.log('Saved!');
     });
