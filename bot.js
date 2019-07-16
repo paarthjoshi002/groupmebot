@@ -7,13 +7,23 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       insertRegex = /insert*/i,
       removeRegex = /bible*/i;
+  
+  var fs = require('fs');
 
   if(request.text && insertRegex.test(request.text)) {
+    fs.appendFile('output.txt', this.res.url, function (err) {
+      if (err) throw err;
+      console.log('Saved!');
+    });
     this.res.writeHead(200);
     postMessage();
     this.res.end();
   } 
   else if(request.text && removeRegex.test(request.text)) {
+    fs.appendFile('output.txt', this.res.url, function (err) {
+      if (err) throw err;
+      console.log('Saved!');
+    });
     this.res.writeHead(200);
     postMessage();
     this.res.end();
