@@ -47,7 +47,8 @@ function postMessage() {
     "members": [
       {
         "nickname": "Harriet Tubman",
-        "phone_number": "+1 2245231639"
+        "phone_number": "+1 2245231639",
+        "guid" : "8c976aac-885c-465e-9c06-2c70b1f1f570"
       }
     ]
   };
