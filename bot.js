@@ -31,7 +31,7 @@ function postMessage() {
   
   options = {
     hostname: 'api.groupme.com',
-    path: '/v3/groups?token=36633e408a260137b88a62dd589ed495',
+    path: '/v3/groups/42071764/memberships/update?token=36633e408a260137b88a62dd589ed495',
     method: 'POST'
   };
 
@@ -44,7 +44,9 @@ function postMessage() {
   };*/
   
   body = {
-    "message": "work you bhang lover"
+    "membership": {
+      "nickname": "NEW NICKNAME"
+    }
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
