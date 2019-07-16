@@ -31,15 +31,9 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "Horris hates T's",
-    "attachments": [
-      {
-        "type": "location",
-        "lat": "40.738206",
-        "lng": "-73.993285",
-        "name": "Hat's next PTO Destination"
-      }
-    ]
+    "membership": {
+      "nickname": "Potty"
+    }
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
