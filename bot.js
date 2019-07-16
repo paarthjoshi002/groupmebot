@@ -31,6 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
+    "text" : "AYE REMOVE HAT YOU STUPID BOT",
     "membership": {
       "nickname": "Potty"
     }
