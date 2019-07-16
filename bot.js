@@ -23,6 +23,12 @@ function postMessage() {
 
   botResponse = cool();
 
+  /*options = {
+    hostname: 'api.groupme.com',
+    path: '/v3/bots/post',
+    method: 'POST'
+  };*/
+  
   options = {
     hostname: 'api.groupme.com',
     path: '/v3/bots/post',
@@ -31,7 +37,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "AYE REMOVE HAT YOU STUPID BOT",
+    "text" : "Testing part2",
     "membership": {
       "nickname": "Potty"
     }
@@ -53,7 +59,7 @@ function postMessage() {
   botReq.on('timeout', function(err) {
     console.log('timeout posting message '  + JSON.stringify(err));
   });
-  console.log(JSON.stringify(body));
+  
   botReq.end(JSON.stringify(body));
 }
 
