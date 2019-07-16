@@ -29,9 +29,15 @@ function postMessage() {
     method: 'POST'
   };*/
   
-  options = {
+  /*options = {
     hostname: 'api.groupme.com',
     path: '/v3/groups/42071764/members/add?token=36633e408a260137b88a62dd589ed495',
+    method: 'POST'
+  };*/
+  
+  options = {
+    hostname: 'api.groupme.com',
+    path: '/v3/groups/42071764/members/8c976aac-885c-465e-9c06-2c70b1f1f570/remove?token=36633e408a260137b88a62dd589ed495',
     method: 'POST'
   };
 
@@ -43,16 +49,6 @@ function postMessage() {
     }
   };*/
   
-  body = {
-    "members": [
-      {
-        "nickname": "Harriet Tubman",
-        "phone_number": "+1 2245231639",
-        "guid" : "8c976aac-885c-465e-9c06-2c70b1f1f570"
-      }
-    ]
-  };
-
   console.log('sending ' + botResponse + ' to ' + botID);
 
   botReq = HTTPS.request(options, function(res) {
