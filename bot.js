@@ -44,9 +44,7 @@ function postMessage() {
   };*/
   
   body = {
-    "message": {
-      "text": "Testing with groupe specific api path"
-    }
+    "message": "work you bhang lover"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
